@@ -1,0 +1,33 @@
+.title-advantage {@extend %transparent; } 
+
+.advantages {
+    @include centerFlex;
+        padding-top: 94px;
+        padding-left: 0;
+        margin: 0;
+
+.list-advantages {
+    @extend %li;
+    width: 270px;}}
+
+
+.zaglawn {
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.14;  }
+
+
+.text-pole {
+            line-height: 1.7;
+        color: $stile-text-color;
+        margin-top: 10px;
+        margin-bottom: 0;
+         }           
+
+.fon-advantage {
+    @include centerFlex;
+    height: 120px;
+background-color: #F5F4FA;
+}
+
+.advantages .list-& + .list-&{ margin-left: 30px;}
