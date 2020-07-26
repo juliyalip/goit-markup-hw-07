@@ -1,5 +1,5 @@
 
-.komanda {background-color: $section-komanda-color;
+.komanda {background-color: $section-partner-color;
     text-align: center; }
 
 .partner {@include centerFlex;
@@ -8,11 +8,11 @@
     margin-bottom: 0;
     padding-left: 0;
 
-& &-list + &-list { margin-left: 30px;}}  
+&-list + &-list { margin-left: 30px;}}  
 
 .fon-partner {background-color: $primery-fon;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0 0 4px 4px;
 
 .title-partner { display: inline-block;
         margin-top: 30px;
@@ -22,13 +22,13 @@
 .social-links { margin-top: 10px;
             margin-bottom: 16px;
              line-height: 1.8; 
-            color: $stile-text-color;} }  
+            color: $style-text-color;} }  
             
 .seti {@include centerFlex;
                 padding-left: 0;
                 padding-bottom: 24px;
               
-& &-partner + &-partner {margin-left: 10px;}   }            
+&-partner + &-partner {margin-left: 10px;}   }            
 
 .fon-s {
     @include centerFlex;
@@ -45,5 +45,5 @@ transition: background-color $transition-valuse,
 fill $transition-valuse;
 
 &:hover,
-&:focus {background: $activ-button-color;
-    fill: $button-text-activ;}}
+&:focus {background: $active-button-color;
+    fill: $button-text-active;}}

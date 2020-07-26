@@ -355,7 +355,7 @@ html {
 
 body {
   color: #212121;
-  font-family: Roboto, san-serif;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   background-color: #FFFFFF;
 }
@@ -526,7 +526,6 @@ span {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
-  margin-top: 0;
   margin-top: 94px;
 }
 
@@ -635,12 +634,12 @@ span {
 }
 
 .cart-content:hover {
-  -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-          box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.06), 0 1px 1px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.06), 0 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 footer {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   color: #FFFFFF;
   background-color: #2F303A;
   font-size: 14px;
@@ -764,8 +763,8 @@ address {
   background-color: #2196F3;
   border-color: #2196F3;
   border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .imput-mail {

@@ -4,10 +4,9 @@
 .vse-knopki{
  @include centerFlex;
     margin-bottom: 50px;
-    margin-top: 0;
-    margin-top: 94px;
+     margin-top: 94px;
 
-& .list-vse + .list-vse {margin-left: 8px;}}
+.list-vse + .list-vse {margin-left: 8px;}}
 
 .button 
         {display: inline-block;
@@ -22,8 +21,8 @@
     
 &:hover,
 &:focus {
-            background-color: $activ-button-color;
-            color: $button-text-activ;     }  }
+            background-color: $active-button-color;
+            color: $button-text-active;     }  }
 
 
 
@@ -85,8 +84,8 @@ margin-right: 30px;
 .subtitle {margin-top: 0;
             margin-bottom: 0;
              line-height: 1.9;
-               color: $stile-text-color;
+               color: $style-text-color;
         font-size: 16px;
         font-weight: normal;}     
     
-&:hover {box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);} }
+&:hover {box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.06), 0 1px 1px rgba(0, 0, 0, 0.12);} }

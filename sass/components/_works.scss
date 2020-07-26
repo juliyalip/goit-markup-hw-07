@@ -9,12 +9,12 @@ margin-bottom: 94px;
 position: relative;
 }
 
-& &-list + &-list {margin-left: 30px;}
+&-list + &-list {margin-left: 30px;}
 
 &-title {
     position: absolute;
     bottom: 0;
-    color: $button-text-activ;
+    color: $button-text-active;
     background-color: $text-fon;
    padding-top: 27px;
 padding-bottom: 27px;

@@ -8,7 +8,7 @@
     margin-top: 0;
     margin-bottom: 0;
 
-& .item + .item { margin-left: 50px;}    
+.item + .item { margin-left: 50px;}    
     }
 
 .navigac {
@@ -18,16 +18,16 @@
         padding-bottom: 32px;
         margin-top: 0;
         margin-bottom: 0;
-        color: $stile-text-color;
+        color: $style-text-color;
     line-height: 1.5;
     transition: color $transition-valuse;
 
 &:hover,
-&:focus {color: $activ-text-color;
-    fill: $activ-text-color;
+&:focus {color: $active-text-color;
+    fill: $active-text-color;
          }}    
 
-.site-nav .current {color: $activ-text-color;
+.site-nav .current {color: $active-text-color;
 &:after {
         content: '';
      position: absolute;
@@ -36,25 +36,25 @@
      left: 0;
      width: 100%;
      height: 4px;
-     background-color: $activ-text-color;
+     background-color: $active-text-color;
      border-radius: 2px;}   }    
 
 
 .contact {@include centerFlex;
-        color: $stile-text-color;
+        color: $style-text-color;
         line-height: 1.14;
-        fill: $stile-text-color;
+        fill: $style-text-color;
         transition: fill $transition-valuse,
         color $transition-valuse;
     
 &:hover,
-&:focus {color: $activ-text-color;
-    fill: $activ-text-color;
+&:focus {color: $active-text-color;
+    fill: $active-text-color;
          }    }     
      
 .adres-nav {display: flex;
             margin-left: auto;
           
-& .adres-item + .adres-item {margin-left: 50px;}
+.adres-item + .adres-item {margin-left: 50px;}
 .icon-mail {margin-right: 10px;} }                          
      
