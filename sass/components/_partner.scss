@@ -1,0 +1,49 @@
+
+.komanda {background-color: $section-komanda-color;
+    text-align: center; }
+
+.partner {@include centerFlex;
+    padding-bottom: 94px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+& &-list + &-list { margin-left: 30px;}}  
+
+.fon-partner {background-color: $primery-fon;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+
+.title-partner { display: inline-block;
+        margin-top: 30px;
+        margin-bottom: 0;
+        font-size: 16px;
+        line-height: 1.9;} 
+.social-links { margin-top: 10px;
+            margin-bottom: 16px;
+             line-height: 1.8; 
+            color: $stile-text-color;} }  
+            
+.seti {@include centerFlex;
+                padding-left: 0;
+                padding-bottom: 24px;
+              
+& &-partner + &-partner {margin-left: 10px;}   }            
+
+.fon-s {
+    @include centerFlex;
+    height: 44px;
+    width: 44px;
+    background-color: inherit;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+
+fill: #AFB1B8;
+transition: background-color $transition-valuse,
+fill $transition-valuse;
+
+&:hover,
+&:focus {background: $activ-button-color;
+    fill: $button-text-activ;}}

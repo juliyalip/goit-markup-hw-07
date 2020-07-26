@@ -1,10 +1,9 @@
-@import "./base/normalize";
-@import "./utils/variables";
-@import "./base/stil";
-@import "./utils/placeholders";
-@import "./utils/mixins";
-@import "./components/port";
-@import "./components/logo";
-@import "./components/header";
-@import "./components/footer";
 
+@import "./utils/variables";
+@import "./utils/normalize";
+@import "./utils/base";
+@import "./components/header";
+@import "./components/logo";
+@import "./components/logo";
+@import "./components/galeri";
+@import "./components/footer";

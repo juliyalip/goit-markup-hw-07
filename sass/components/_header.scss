@@ -1,64 +1,60 @@
-// navigaciya
-.main-nav {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ECECEC;}
 
-.site-nav {
-    @extend %li;
-    display: flex;
+.main-nav {@include centerFlex;
+    border-bottom: 1px solid #ECECEC;
+    }
+
+    
+.site-nav {display: flex;
     margin-top: 0;
     margin-bottom: 0;
 
-.navigac  {position: relative;
-display: block;
-padding-top: 32px;
-padding-bottom: 32px;
-margin-top: 0;
-margin-bottom: 0;
-color: $stile-text-color;
-line-height: 1.5;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}}
+& .item + .item { margin-left: 50px;}    
+    }
+
+.navigac {
+        position: relative;
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: $stile-text-color;
+    line-height: 1.5;
+    transition: color $transition-valuse;
+
+&:hover,
+&:focus {color: $activ-text-color;
+    fill: $activ-text-color;
+         }}    
 
 .site-nav .current {color: $activ-text-color;
 &:after {
-    content: '';
- position: absolute;
- line-height: 80px;
- bottom: 0;
- left: 0;
- width: 100%;
- height: 4px;
- background-color: $activ-text-color;
- border-radius: 2px;}}  
+        content: '';
+     position: absolute;
+     line-height: 80px;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 4px;
+     background-color: $activ-text-color;
+     border-radius: 2px;}   }    
 
 
- 
-.site-nav .item + .item { margin-left: 50px;}
-
-
-// telefon; e-mail
-.adres-nav {
-    @extend %li;
-    display: flex;
-    margin-left: auto;
-
-.contact {display: flex;
-        align-items: center;
+.contact {@include centerFlex;
         color: $stile-text-color;
         line-height: 1.14;
         fill: $stile-text-color;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);} }    
-
-.adres-nav .adres-item + .adres-item {margin-left: 50px;}
-.icon-mail {margin-right: 10px;}   
-
-
-
-.navigac:hover, .navigac:focus,
-.contact:hover, .contact:focus
-{color: $activ-text-color;
-fill: $activ-text-color;  }
-
-.container {@extend %container;}
+        transition: fill $transition-valuse,
+        color $transition-valuse;
+    
+&:hover,
+&:focus {color: $activ-text-color;
+    fill: $activ-text-color;
+         }    }     
+     
+.adres-nav {display: flex;
+            margin-left: auto;
+          
+& .adres-item + .adres-item {margin-left: 50px;}
+.icon-mail {margin-right: 10px;} }                          
+     

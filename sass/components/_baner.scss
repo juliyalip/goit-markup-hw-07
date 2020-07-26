@@ -1,24 +1,22 @@
-.shapka  {  max-width: 1600px;
+.fon-baner {
+    max-width: 1600px;
     height: 600px;
     margin-left: auto; 
     margin-right: auto;
         text-align: center;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header.jpg);
         background-repeat: no-repeat;
-        background-color: $primary-text-color;
-         }  
+        background-color: gray;
 
-
-.baner {padding-top: 200px;
+        .baner {padding-top: 200px;
             margin-top: 0;
             margin-bottom: 0;
               font-size: 44px;
               line-height: 1.36;
               color: $button-text-activ;
-              text-transform: uppercase;
-             }  
+              text-transform: uppercase;}
 
-.btn-start {
+        .btn-start {
                 display: inline-block;
                 background-color: $activ-button-color;
                 border-radius: 4px;
@@ -28,4 +26,5 @@
                 font-weight: 700;
                 line-height: 1.9;
                 margin-top: 30px;
-                margin-bottom: 200px;}              
+                margin-bottom: 200px;}
+}

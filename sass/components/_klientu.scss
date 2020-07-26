@@ -1,27 +1,21 @@
-.klientu {
-text-align: center;}
-
-.klientu-list {display: flex;
+.klientu {    
+    @include centerFlex;
     margin-top: 0;
-margin-bottom: 94px;
-padding-left: 0;
-justify-content: center;
+    margin-bottom: 94px;
+    padding-left: 0;
 
-&-items {@extend %li}}
+ & &-items + &-items {margin-left: 30px;}}
 
-.klientu-list .klientu-items + .klientu-items {margin-left: 30px;}
-
-.border-klientu {
+ .border-klientu {
+     @include centerFlex;
     fill: #afb1b8;
-    display: flex;
-    width: 170px;
+     width: 170px;
 height: 90px;
 border: 1px solid #AFB1B8;
 border-radius: 4px;
-justify-content: center;
-align-items: center;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: $transition-valuse;
 
 &:hover,
-&:focus {border: 1px solid &ctiv-text-color;
-    fill: &activ-text-color;}}
+&:focus { border: 1px solid $activ-text-color;
+    fill: $activ-text-color;}
+}

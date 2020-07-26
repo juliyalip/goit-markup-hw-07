@@ -6,45 +6,90 @@ footer {font-family: Roboto;
   padding-top: 60px;
       }
 
+address {font-style: inherit;}   
 
-.container-foter {display: flex;
- }    
-      
-
-address {font-style: inherit;}
 .podval {margin-top: 20px;
     margin-bottom: 0;
     line-height: 1.7;}
 
-.link-footer {padding-left: 0;
-        margin-top: 9px;   }
 
-.prisoedinenie {margin-left: 69px;
-            text-align: center;}
-            
+.link-footer {padding-left: 0;
+        margin-top: 9px;
+
+.adres-footer {color: $color-adress-footer; 
+            line-height: 1.7; 
+                 }        
+    }    
+
+.container-foter {display: flex;}      
+
+
+
 .seti-footer {display: flex;
-                padding-left: 0;}
-.seti-footer .soc-seti + .soc-seti {margin-left: 10px;}    
+        padding-left: 0;
+    
+& .soc-seti + .soc-seti {margin-left: 10px;} } 
+
+.soc-seti > a {color: $color-adress-footer;}
+.footer-seti {fill: #FFFFFF}
+
 
 .link-seti {
-    display: flex;
+   @include centerFlex;
     height: 44px;
     width: 44px;
     background-color: gray;
     background-size: 20px;
     background-repeat: no-repeat;
      border-radius: 50%;
-     justify-content: center;
-     align-items: center;
-     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: $transition-valuse;
 
-&:hover  {  background-color: &activ-button-color;}   
+&:hover {background-color: $activ-button-color;}      
      }
 
-.logo-footer {
-        color: $footer-text-color;
-        font-family: Raleway;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 26px;
-       }
+.copirayt {
+        color: $stile-text-color; 
+ text-align: center;
+ margin-bottom: 0;
+ }     
+
+ .subscription
+{display: flex;
+flex-direction: column;
+margin-left: 94px;
+
+.footer-form {
+  @include centerFlex;}}
+
+  .button-form {
+  @include centerFlex;
+    width: 200px;
+    height: 50px;
+font-size: 16px;
+font-weight: 700;
+color: $button-text-activ;
+background-color: $activ-button-color;
+border-color: $activ-button-color;
+border-radius: 4px; 
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);}  
+
+.imput-mail {
+    width: 358px;
+    height: 50px;
+    background-color: inherit;
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+margin-right: 12px;
+color: $button-text-activ;
+padding-left: 16px;
+padding-right: 16px;
+}
+
+.icon-form {margin-left: 10px;}
+
+
+.prisoedinenie {text-align: center;
+margin-left: 69px;}
+
+.container-foter a {color: $button-text-activ;}
